@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		int test[] = {5,4,3,2,1,0,0,-1};
+		int test[] = {0,1,2,3,4,5,2,1,0,-14};
 		System.out.println(Arrays.toString(test));
 		sort(test);
 		System.out.println(Arrays.toString(test));
