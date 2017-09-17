@@ -4,11 +4,12 @@ import java.util.Currency;
 public class HeapSort {
 
 	/*
-	 * Time complexity: O(nlogn) - all cases Space complexity: O(1)
+	 * Time complexity: O(nlogn) - all cases 
+	 * Space complexity: O(1)
 	 */
 	
 	public static void main(String[] args) {
-		int[] arr = { 5, 2, 1, 6, 2, 9 };
+		int[] arr = {5,2,1,2,7,8,2,31};
 		System.out.println(Arrays.toString(arr));
 		heapSort(arr);
 		System.out.println(Arrays.toString(arr));
@@ -53,8 +54,8 @@ public class HeapSort {
 	 * 2i+2 = right child
 	 */
 	private static void maxHeapify(int[] arr, int i, int heapsize) {
-		int l = 2*i+1;
-		int r = 2*i+2;
+		int l = 2*i + 1;
+		int r = 2*i + 2;
 		
 		// the index of the largest amongst the three nodes left, parent and child
 		
@@ -64,13 +65,12 @@ public class HeapSort {
 		else
 			largest = i;
 		
-		if (r < heapsize && arr[r] > arr[i])
+		if (r < heapsize && arr[r] > arr[largest])
 			largest = r;
 		
 		if (largest != i) {
-			exchange(arr, largest, i);
+			exchange(arr, i, largest);
 			maxHeapify(arr, largest, heapsize);
 		}
 	}
-	
 }

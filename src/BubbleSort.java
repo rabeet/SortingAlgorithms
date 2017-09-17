@@ -2,9 +2,11 @@ import java.util.Arrays;
 
 public class BubbleSort {
 	
-	/*
+	/* BUBBLESORT:
 	 * Time complexity: O(n^2) - all cases
 	 * Space complexity: O(1)
+	 * 
+	 * in a nested loop swap 2 adjacent elements if necessary
 	 */
 
 	public static void main(String[] args) {
