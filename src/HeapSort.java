@@ -9,7 +9,7 @@ public class HeapSort {
 	 */
 	
 	public static void main(String[] args) {
-		int[] arr = {5,2,1,2,7,8,2,31};
+		int[] arr = {2,2,2,2,1};
 		System.out.println(Arrays.toString(arr));
 		heapSort(arr);
 		System.out.println(Arrays.toString(arr));

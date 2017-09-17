@@ -22,6 +22,7 @@ public class SelectionSort {
 			}
 			if (min_index != i) 
 				Utilities.swap(arr, i, min_index);
+//			System.out.println(Arrays.toString(arr));
 		}
 	}
 }

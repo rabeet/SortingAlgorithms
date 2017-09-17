@@ -16,11 +16,11 @@ public class QuickSort {
 	
 	public static void main(String[] args) {
 
-		int test[] = {5,4,3,2,1,0,0,-1};
-		System.out.println(Arrays.toString(test));
-		quicksortRabeet(test, 0, test.length);
-		System.out.println(Arrays.toString(test));
-		int[] test1 = {5,4,3,2,1,0,0,-1};
+//		int test[] = {5,4,3,2,1,0,0,-1};
+//		System.out.println(Arrays.toString(test));
+//		quicksortRabeet(test, 0, test.length);
+//		System.out.println(Arrays.toString(test));
+		int[] test1 = {5,2,1,2,7,8,2,31};
 		System.out.println(Arrays.toString(test1));
 		quicksort(test1, 0, test1.length-1);
 		System.out.println(Arrays.toString(test1));
@@ -31,21 +31,23 @@ public class QuickSort {
 		if (start >= end)
 			return;
 		int pivot = partition(arr, start, end);
+//		System.out.println(pivot);
 		quicksort(arr, start, pivot-1);
 		quicksort(arr, pivot+1, end);
 	}
 	
 	public static int partition(int[] arr, int start, int end) {
-		int pivot = (start + end)/2;
 		Utilities.swap(arr, start, end);
 		
 		int i = start;
 		for (int j = start; j < end; j++) {
 			if (arr[j] <= arr[end]) {
 				Utilities.swap(arr, i, j);
+				System.out.println(Arrays.toString(arr));
 				i++;
 			}
 		}
+		System.out.println("stop");
 		Utilities.swap(arr, i, end);
 		return i;
 	}
