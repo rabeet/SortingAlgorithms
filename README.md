@@ -1,14 +1,15 @@
 # SortingAlgorithms
 Quick reference for sorting algorithms.
 
-1. Bubble Sort
-2. Insertion Sort
-```for i loop from 0 to end
+## 1. Bubble Sort
+## 2. Insertion Sort
+```
+for i loop from 0 to end
 	for j loop from i to 0
 		if arr[j-1] > arr[j]
 			swap(arr, j, j-1)
 ```
-3. Selection Sort
+## 3. Selection Sort
 ```
 for i = 0 -> end
 	int min_index = i;
@@ -18,7 +19,7 @@ for i = 0 -> end
 	if (min_index != i)
 		swap(i, min_index)
 ```
-4. Merge Sort
+## 4. Merge Sort
 ```
 Divide until the subarrays are of size 1
 Merge 2 subarrays until they are sorted
@@ -56,7 +57,7 @@ merge(arr, start, mid, end) {
 }
 
 ```
-5. Quick Sort
+## 5. Quick Sort
 ```
 pick a random (middle) pivot:
 	left to pivot is subarray that is smaller than pivot
@@ -83,7 +84,7 @@ int partition (arr, start, end) {
 	return i;
 }
 ```
-6. Heap Sort
+## 6. Heap Sort
 ```
 First construct heap: O(n)
 Then keep on maintaining heap until the last element is reached: O(nlogn)
@@ -128,5 +129,5 @@ sort(int[] arr) {
 }
 ```
 # TODO:
-7. Counting Sort
-8. Radix Sort
+## 7. Counting Sort
+## 8. Radix Sort
