@@ -13,6 +13,9 @@ public class MergeSort {
 	 * MERGESORT:
 	 *  1. Divide the arrays recursively into subarrays until they are of size 1.
 	 *  2. Merge two subarrays one-by-one until the two subarrays form a sorted subarray
+	 *  
+	 *  TC: O(nlogn) best case
+	 *  SC: O(n)
 	 */
 	
 	public static void sort(int[] arr) {

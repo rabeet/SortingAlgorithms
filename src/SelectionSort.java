@@ -8,6 +8,11 @@ public class SelectionSort {
 		System.out.println(Arrays.toString(test));
 	}
 	
+	/*
+	 * Time complexity: O(n^2) - worst case
+	 * Space complexity: O(1)
+	 */
+	
 	public static void selectionSort(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			int min_index = i;

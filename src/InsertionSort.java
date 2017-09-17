@@ -1,6 +1,11 @@
 import java.util.Arrays;
 
 public class InsertionSort {
+	
+	/*
+	 * Time complexity: O(n^2) - worst case
+	 * Space complexity: O(1)
+	 */
 
 	public static void main(String[] args) {
 		

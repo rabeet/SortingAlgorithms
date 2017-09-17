@@ -9,6 +9,9 @@ public class QuickSort {
 	 * subarray to the left is smaller, to the right is bigger
 	 * run quicksort to the left and the right
 	 * stop when whole array has been visited
+	 * 
+	 * TC: O(nlogn) best case
+	 * SC: O(1)
 	 */
 	
 	public static void main(String[] args) {

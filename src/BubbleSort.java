@@ -1,6 +1,11 @@
 import java.util.Arrays;
 
 public class BubbleSort {
+	
+	/*
+	 * Time complexity: O(n^2) - all cases
+	 * Space complexity: O(1)
+	 */
 
 	public static void main(String[] args) {
 		int test[] = {1,5,7,2,4,1};
