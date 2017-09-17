@@ -129,5 +129,5 @@ sort(int[] arr) {
 }
 ```
 # TODO:
-## 7. Counting Sort
-## 8. Radix Sort
+7. Counting Sort
+8. Radix Sort
