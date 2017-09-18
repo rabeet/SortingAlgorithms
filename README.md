@@ -1,4 +1,4 @@
-# SortingAlgorithms
+# Sorting Algorithms
 Quick reference for sorting algorithms.
 
 ## 1. Bubble Sort
